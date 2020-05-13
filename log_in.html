@@ -1,0 +1,636 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Python world &mdash; { Login } </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href= "C:\Users\Deepak\Desktop\index.html\python.ico" >
+       
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/jquery-ui.css">
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/fontawesome-free-5.13.0-web/css/all.min.css" >
+  
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/aos.css">
+  <link rel="stylesheet" type="text/css" href="/Exams/resources/resources-1.0/css/jquery.mb.YTPlayer.min.css" media="all">
+
+  <link rel="stylesheet" href="/Exams/resources/resources-1.0/css/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <div class="py-2 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 d-none social-wrap">
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-linkedin"></span></a>
+
+          </div>
+          <div class="col-lg-8 col-8 text-left ">
+            <div class="row">
+				<div class="col-lg-6 col-12 ">
+					<a href="#" class="small mr-3">Best view on google chrome browser </a>
+				</div>
+			</div>
+		  </div>
+		  <div class="col-lg-4 col-4 text-right ">
+            <a id="registerlink1" href="#" class="d-lg-none small mr-3" style="height: 40px;"><span class="icon-users"></span> Register</a>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <a href="index.jsp" class="d-block">
+              <img src="/Exams/resources/resources-1.0/images/logo.jpg" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active">
+                  <a href="index.jsp" class="nav-link text-left">Home</a>
+                </li>
+                <li class="has-children">
+                  <a href="#" class="nav-link text-left">About Us</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Our Teachers</a></li>
+                    <li><a href="#">Our College</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-left">Admissions</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-left">Courses</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-left">Contact</a>
+                  </li>
+              </ul>
+			</nav>
+
+          </div>
+          <div class="ml-auto">
+			<div class="row">
+				<div class="d-inline-block">
+					<a id="loginlink" href="#" class="small btn btn-primary py-2 rounded-0" style="height: 40px;"><span class="icon-unlock-alt"></span> Log In</a>
+				</div>
+				<div class="d-inline-block">
+					<a id="registerlink" href="#" class="d-none d-lg-block small btn btn-primary py-2 rounded-0" style="height: 40px; margin-left: 5px;"><span class="icon-users"></span> Register</a>
+				</div>
+				<div class="social-wrap d-inline-block" >
+					<a href="#" class="d-lg-none site-menu-toggle js-menu-toggle text-black py-3" style="margin-left:4px; margin-right:4px; height: 40px;"><span class="icon-menu h3"></span></a>
+				</div>
+			</div>	
+          </div>
+         
+        </div>
+      </div>
+
+    </header>
+
+    
+    <div class="site-section-first pb-4" >
+        <div class="custom-breadcrumns border-bottom">
+		  <div class="container">
+			<a href="index.jsp">Home</a>
+			<span class="mx-3 icon-keyboard_arrow_right"></span>
+			<span class="current">Login</span>
+		  </div>
+		</div>
+    </div> 
+    
+	<div id="success-alert"  class="container alert-dismissable" style="display:none;">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+			<strong>Info!</strong> <span>Please Enter the Rollno to download your Admit Card.</span>
+	</div>	
+	
+
+	<div class="site-section pb-4">
+		<div class="container" >
+			<!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+				  <a class="nav-link active" data-toggle="tab" href="#student">Student</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-toggle="tab" href="#faculty">Faculty</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-toggle="tab" href="#examiner">Examiner</a>
+				</li>
+			  </ul>
+			  
+			<!-- Tab panes -->
+			  <div class="tab-content">
+				<div id="student" class="container tab-pane active"><br>
+				  <div id="studentlogin">
+				  <form id="studentloginform" >	
+					<h3>Login As Student</h3>
+				    <div class="row justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="studentloginusername">Roll No.</label>
+									<input type="text" id="studentloginusername" name="username" class="form-control form-control-lg" required="required" pattern="[1-9]{1}[0-9]{6}" maxlength="7">
+								</div>
+								<div class="col-md-12 form-group">
+									<label for="studentloginpassword">Password</label>
+									<input type="password" id="studentloginpassword" name="password" class="form-control form-control-lg" required="required">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input name="usertype" type="hidden" value="student">
+									<button type="submit" id="studentloginbtn" class="btn btn-primary btn-lg px-5 text-left "> Log In</button>
+									<a id="studentloginrecoverbtn" class="float-right" data-toggle="tab" href="#">Register or Get Password</a>
+									<p><span class="text-danger">Contact to your teacher while facing problem with login.</span></p>
+								</div>	
+							</div>
+						</div>
+					</div>
+				  </form>
+				  </div>
+  				  <div id="studentrecover" style="display: none;">
+				  <form id="studentrecoverform" >
+					<h3>Register / Get Password for Student</h3>
+				    <div class="row justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="studentrecoverusername">Roll No.</label>
+									<input type="text" id="studentrecoverusername" name="username" class="form-control form-control-lg" required="required" pattern="[1-9]{1}[0-9]{6}" maxlength="7">
+								</div>
+								<div class="col-md-12 form-group">
+									<label for="id_end_time" >Date of Birth</label>
+									<div class="input-group date" id="id_4">
+										<input type="text" id="studentrecoverpassword" name="password" value="2018-03-16" class="form-control form-control-lg" readonly/>
+										<div class="input-group-addon input-group-append">
+											<div class="input-group-text">
+												<i class="fas fa-calendar"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input name="usertype" type="hidden" value="student">
+									<button type="submit" id="studentrecoverbtn" class="btn btn-primary btn-lg px-5 text-left "> Get Password</button>
+									<a id="studentrecoverloginbtn" class="float-right" data-toggle="tab" href="#">Log In</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				  </form>
+				  </div>
+
+				  
+				</div>
+				<div id="faculty" class="container tab-pane fade"><br>
+				  <div id="facultylogin">
+				  <form id="facultyloginform" >
+					<h3>Login As Faculty</h3>
+					<div class="row justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="facultyloginusername">Mobile No.</label>
+									<input type="text" id="facultyloginusername" name="username" class="form-control form-control-lg" required="required" pattern="[1-9]{1}[0-9]{9}" maxlength="10">
+								</div>
+								<div class="col-md-12 form-group">
+									<label for="facultyloginpassword">Password</label>
+									<input type="password" id="facultyloginpassword" name="password" class="form-control form-control-lg" required="required">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input name="usertype" type="hidden" value="faculty">
+									<button type="submit" id="facultyloginbtn" class="btn btn-primary btn-lg px-5">Log In</button>
+									<a id="facultyloginrecoverbtn" class="float-right" href="#" >Register or Get Password</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </form>
+				  </div>
+				  
+				  <div id="facultyrecover" style="display: none;">
+				  <form id="facultyrecoverform" >
+					<h3>Register / Get Password for Faculty</h3>
+					<div class="row justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="facultyrecoverusername">College ID Card No.</label>
+									<input type="text" id="facultyrecoverusername" name="username" class="form-control form-control-lg" required="required">
+								</div>
+								<div class="col-md-12 form-group">
+									<label for="facultyrecoverpassword">Adhar No.</label>
+									<input type="text" id="facultyrecoverpassword" name="password" class="form-control form-control-lg" required="required" pattern="[1-9]{1}[0-9]{11}" maxlength="12">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input name="usertype" type="hidden" value="faculty">
+									<button type="submit" id="facultyrecoverbtn" class="btn btn-primary btn-lg px-5">Get Password</button>
+									<a id="facultyrecoverloginbtn" class="float-right" href="#" >Log In</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </form>
+				  </div>
+				  
+				</div>
+				
+				<div id="examiner" class="container tab-pane fade"><br>
+				  <div id="examinerlogin">
+				  <form id="examinerloginform" >
+					<h3>Login As Examiner</h3>
+					<div class="row justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="examinerloginusername">Mobile No.</label>
+									<input type="text" id="examinerloginusername" name="username" class="form-control form-control-lg" required="required" pattern="[1-9]{1}[0-9]{9}" maxlength="10">
+								</div>
+								<div class="col-md-12 form-group">
+									<label for="examinerloginpassword">Password</label>
+									<input type="password" id="examinerloginpassword" name="password" class="form-control form-control-lg" required="required">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input name="usertype" type="hidden" value="examiner">
+									<button type="submit" id="examinerloginbtn"  class="btn btn-primary btn-lg px-5">Log In</button>
+									<a id="examinerloginrecoverbtn" class="float-right" href="#" >Register or Get Password</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </form>
+				  </div>
+
+				  <div id="examinerrecover" style="display: none;">
+				  <form id="examinerrecoverform" >
+					<h3>Register / Get Password for Examiner</h3>
+					<div class="row justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="examinerrecoverusername">Mobile No.</label>
+									<input type="text" id="examinerrecoverusername" name="username" class="form-control form-control-lg" required="required" pattern="[1-9]{1}[0-9]{9}" maxlength="10">
+								</div>
+								<div class="col-md-12 form-group">
+									<label for="examinerrecoverpassword">e-Mail ID</label>
+									<input type="password" id="examinerrecoverpassword" name="password" class="form-control form-control-lg" required="required">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input name="usertype" type="hidden" value="examiner">
+									<button type="submit" id="examinerrecoverbtn"  class="btn btn-primary btn-lg px-5">Get Password</button>
+									<a id="examinerrecoverloginbtn" class="float-right" href="#" >Log In</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </form>
+				  </div>
+
+				  
+				</div>
+			  </div>  
+
+		</div>
+	</div>
+  
+
+    <div class="footer" style="margin-top:50px; padding:0px; ">
+      <div class="container" >
+        <div class="row " style="padding-top:10px; padding-bottom:10px;">
+                <div class="col-lg-6 col-12 text-center"><span class="icon-phone2 mr-2"></span> +91-141-2565989, 2569850 </div>
+                <div class="col-lg-6 col-12 text-center"> <span class="icon-envelope-o mr-2"></span> admin@subodhpgcollege.com</div>
+        </div>
+      </div>
+    </div>
+        
+
+  </div>
+  <!-- .site-wrap -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
+
+  <script src="/Exams/resources/resources-1.0/js/jquery-3.4.1.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery-ui.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/popper.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/bootstrap.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/owl.carousel.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery.stellar.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery.countdown.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery.easing.1.3.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/aos.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery.fancybox.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery.sticky.js"></script>
+  <script src="/Exams/resources/resources-1.0/js/jquery.mb.YTPlayer.min.js"></script>
+
+  <script src="/Exams/resources/resources-1.0/js/main.js"></script>
+<!-- the date time picker from calendar language-->
+	<script src="/Exams/resources/resources-1.0/js/moment-with-locales.min.js"></script>
+<!-- the date time picker from calendar -->
+	<script src="/Exams/resources/resources-1.0/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="/Exams/resources/resources-1.0/fontawesome-free-5.13.0-web/js/all.min.js" ></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164584244-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164584244-1');
+</script>
+
+
+<script type="text/javascript">
+(function($){
+    $(function(){
+        $('#id_0').datetimepicker({
+            "allowInputToggle": true,
+            "showClose": true,
+            "showClear": true,
+            "showTodayButton": true,
+            "format": "MM/DD/YYYY hh:mm:ss A",
+        });
+        $('#id_1').datetimepicker({
+            "allowInputToggle": true,
+            "showClose": true,
+            "showClear": true,
+            "showTodayButton": true,
+            "format": "MM/DD/YYYY HH:mm:ss",
+        });
+        $('#id_2').datetimepicker({
+            "allowInputToggle": true,
+            "showClose": true,
+            "showClear": true,
+            "showTodayButton": true,
+            "format": "hh:mm:ss A",
+        });
+        $('#id_3').datetimepicker({
+            "allowInputToggle": true,
+            "showClose": true,
+            "showClear": true,
+            "showTodayButton": true,
+            "format": "HH:mm:ss",
+        });
+        $('#id_4').datetimepicker({
+            "allowInputToggle": true,
+            "showClose": true,
+            "showClear": true,
+            "showTodayButton": true,
+            "format": "YYYY-MM-DD",
+			"ignoreReadonly":true,
+
+        })
+    });
+})(jQuery);
+
+$( document ).ready(function() {
+
+	$("#loginlink").click(function(){
+		$('#studentrecover').hide();
+		$('#studentlogin').show();
+		$('#facultyrecover').hide();
+		$('#facultylogin').show();
+		$('#examinerrecover').hide();
+		$('#examinerlogin').show();
+	});
+	$("#registerlink").click(function(){
+		$('#studentlogin').hide();
+		$('#studentrecover').show();
+		$('#facultylogin').hide();
+		$('#facultyrecover').show();
+		$('#examinerlogin').hide();
+		$('#examinerrecover').show();
+	});
+	$("#registerlink1").click(function(){
+		$('#studentlogin').hide();
+		$('#studentrecover').show();
+		$('#facultylogin').hide();
+		$('#facultyrecover').show();
+		$('#examinerlogin').hide();
+		$('#examinerrecover').show();
+	});
+	
+	$("#studentloginrecoverbtn").click(function(){
+		$('#studentlogin').hide();
+		$('#studentrecover').show();
+	});
+	$("#studentrecoverloginbtn").click(function(){
+		$('#studentrecover').hide();
+		$('#studentlogin').show();
+	});
+	$("#facultyloginrecoverbtn").click(function(){
+		$('#facultylogin').hide();
+		$('#facultyrecover').show();
+	});
+	$("#facultyrecoverloginbtn").click(function(){
+		$('#facultyrecover').hide();
+		$('#facultylogin').show();
+	});
+	$("#examinerloginrecoverbtn").click(function(){
+		$('#examinerlogin').hide();
+		$('#examinerrecover').show();
+	});
+	$("#examinerrecoverloginbtn").click(function(){
+		$('#examinerrecover').hide();
+		$('#examinerlogin').show();
+	});
+	
+		$('#studentloginusername').keyup(function () {
+			$('#studentloginusername').removeClass().addClass('form-control ');
+    		if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+		       this.value = this.value.replace(/[^0-9\.]/g, '');
+		    }
+		});
+		
+		$('#studentrecoverusername').keyup(function () {
+			$('#studentrecoverusername').removeClass().addClass('form-control ');
+    		if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+		       this.value = this.value.replace(/[^0-9\.]/g, '');
+		    }
+		});
+		
+		$('#facultyloginusername').keyup(function () {
+			$('#facultyloginusername').removeClass().addClass('form-control ');
+    		if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+		       this.value = this.value.replace(/[^0-9\.]/g, '');
+		    }
+		});
+		
+		$('#facultyrecoverpassword').keyup(function () {
+			$('#facultyrecoverpassword').removeClass().addClass('form-control ');
+    		if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+		       this.value = this.value.replace(/[^0-9\.]/g, '');
+		    }
+		});
+		
+		$('#examinerloginusername').keyup(function () {
+			$('#examinerloginusername').removeClass().addClass('form-control ');
+    		if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+		       this.value = this.value.replace(/[^0-9\.]/g, '');
+		    }
+		});
+		
+		$('#examinerrecoverusername').keyup(function () {
+			$('#examinerrecoverusername').removeClass().addClass('form-control ');
+    		if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
+		       this.value = this.value.replace(/[^0-9\.]/g, '');
+		    }
+		});
+		
+
+	$("#studentrecoverform").submit(function(e){
+		e.preventDefault();
+		var data = new FormData(this); // <-- 'this' is your form element
+		ragisteruser(data);
+	});
+
+	$("#facultyrecoverform").submit(function(e){
+		e.preventDefault();
+		var data = new FormData(this); // <-- 'this' is your form element
+//		console.log(data.get("rollno"))
+		ragisteruser(data);
+	});
+
+	$("#examinerrecoverform").submit(function(e){
+		e.preventDefault();
+		var data = new FormData(this); // <-- 'this' is your form element
+//		console.log(data.get("rollno"))
+		ragisteruser(data);
+	});
+
+	$("#studentloginform").submit(function(e){
+		e.preventDefault();
+		var data = new FormData(this); // <-- 'this' is your form element
+		loginuser(data);
+	});
+	$("#facultyloginform").submit(function(e){
+		e.preventDefault();
+		var data = new FormData(this); // <-- 'this' is your form element
+		loginuser(data);
+	});
+	$("#examinerloginform").submit(function(e){
+		e.preventDefault();
+		var data = new FormData(this); // <-- 'this' is your form element
+		loginuser(data);
+	});
+	
+	function ragisteruser(data){
+		$.ajax({
+			url: "/Exams/LoginController/recoverPassword",
+            data: data,
+            cache: false,
+            contentType: false,
+            processData: false,
+            type: 'POST',     
+            success: function(response){
+            	if(response.success == "Successfully")
+				{
+            		$('#success-alert').removeClass().addClass('alert alert-success alert-dismissable');
+					$('#success-alert').find('strong').html('Success! ');
+					$('#success-alert').find('span').html(response.msg);
+					$("#loginlink").click();
+					$('#success-alert').show();
+            	}else{
+					$('#success-alert').removeClass().addClass('alert alert-danger alert-dismissable');
+					$('#success-alert').find('strong').html('Error! ');
+					$('#success-alert').find('span').html(response.msg);
+					$('#success-alert').show();
+            	}
+            },
+            error: function(jqXHR, textStatus, errorThrown)
+			{
+				console.log('in fill ' + errorThrown);
+			}
+		});
+		
+	}
+
+	function loginuser(data){
+		$('#loader').addClass('show');
+		$.ajax({
+			url: "/Exams/LoginController/LoginCheck",
+            data: data,
+            cache: false,
+            contentType: false,
+            processData: false,
+            type: 'POST',     
+            success: function(response){
+            	if(response.success == "Successfully")
+				{
+            		$('#success-alert').removeClass().addClass('alert alert-success alert-dismissable');
+					$('#success-alert').find('strong').html('Success! ');
+					$('#success-alert').find('span').html(response.msg);
+					$('#success-alert').show();
+					window.location.href = response.redirecturl;
+            	}else{
+					$('#success-alert').removeClass().addClass('alert alert-danger alert-dismissable');
+					$('#success-alert').find('strong').html('Error! ');
+					$('#success-alert').find('span').html(response.msg);
+					$('#success-alert').show();
+					$('#loader').removeClass('show');
+					
+            	}
+            },
+            error: function(jqXHR, textStatus, errorThrown)
+			{
+				console.log('in fill ' + errorThrown);
+			}
+		});
+	}
+	
+
+});
+</script>
+
+</body>
+
+</html>
